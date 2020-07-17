@@ -1,0 +1,326 @@
+{% extends '../layout.twig' %}
+
+{% block main %}
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="194x194" href="favicon-194x194.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#ee105a">
+	<meta name="apple-mobile-web-app-title" content="Милкснуды «Мама может!»">
+	<meta name="application-name" content="Милкснуды «Мама может!»">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:title" content="Милкснуды «Мама может!»">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="//efiand.github.io/milksnood/index.html">
+	<meta property="og:image" content="//efiand.github.io/milksnood/img/logo.png">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="241">
+	<meta property="og:image:height" content="241">
+	<meta property="og:image:alt" content="Милкснуды «Мама может!»">
+	<meta property="og:determiner" content="the">
+	<meta property="og:locale" content="ru_RU">
+	<meta property="og:site_name" content="Милкснуды «Мама может»">
+{% endblock %}
+
+{% block main %}
+	<div class="container">
+		<section class="video half">
+			<h2 class="visually-hidden">Наше видео</h2>
+			<iframe src="https://www.youtube.com/embed/-c45N3_ce9M" allowfullscreen></iframe>
+		</section>
+		<section class="about half">
+			<h2 class="visually-hidden">Описание</h2>
+			<p class="lead lead--main">Милкснуд — это:</p>
+			<ul class="about__list">
+				<li>Снуд для грудного вскармливания в общественных местах.</li>
+				<li>Накидка от солнца и ветра на коляску или переноску.</li>
+				<li>Защита крохи от микробов с тележки супермаркета, детского стульчика в ресторане.</li>
+				<li>Стильный легкий шарф, который прекрасно дополнит любой летний образ мамы!</li>
+			</ul>
+			<p class="lead">Стоит маме только попробовать — и милкснуд станет ее главным помощником!</p>
+		</section>
+	</div>
+	<section class="advantages container">
+		<h2 class="visually-hidden">Наши преимущества</h2>
+		<ul class="advantages__list">
+			<li class="advantages__item advantages__item--1">
+				<h3 class="visually-hidden">Преимущество 1</h3>
+				<p>Натуральный дышащий хлопок премиум-качества.</p>
+				<p>Состав ткани:<br>95 % — хлопок, 5 % — эластан.</p>
+			</li>
+			<li class="advantages__item advantages__item--2">
+				<h3 class="visually-hidden">Преимущество 2</h3>
+				<p>Стильные уникальные расцветки, которые легко дополнят красивый образ мамы и понравятся малышу.</p>
+				<p>Милость принтов зашкаливает!</p>
+			</li>
+			<li class="advantages__item advantages__item--3">
+				<h3 class="visually-hidden">Преимущество 3</h3>
+				<p>Универсальный размер.</p>
+				<p>Удобен мамам любой комплекции. Подходит на 99 % колясок, переносок, тележек и пр.</p>
+			</li>
+		</ul>
+	</section>
+	<div class="container">
+		<section class="gallery half">
+			<h2 class="visually-hidden">Фотогалерея</h2>
+			<a class="gallery__pict pict" id="gallery-pict-1" href="#gallery-1">
+				<img src="img/picts/gallery-pict-1.jpg" width="225" height="150" alt="Пример № 1">
+			</a>
+			<figure class="modal" id="gallery-1">
+				<img class="modal__content" src="img/gallery-1.jpg" width="1920" height="1280" alt="Пример № 1 крупным планом">
+				<a class="modal__close" href="#gallery-pict-1">
+					<span class="visually-hidden">Назад в галлерею</span>
+				</a>
+			</figure>
+			<a class="gallery__pict pict" id="gallery-pict-2" href="#gallery-2">
+				<img src="img/picts/gallery-pict-2.jpg" width="225" height="150" alt="Пример № 2">
+			</a>
+			<figure class="modal" id="gallery-2">
+				<img class="modal__content" src="img/gallery-2.jpg" width="1920" height="1280" alt="Пример № 2 крупным планом">
+				<a class="modal__close" href="#gallery-pict-2">
+					<span class="visually-hidden">Назад в галлерею</span>
+				</a>
+			</figure>
+			<a class="gallery__pict pict" id="gallery-pict-3" href="#gallery-3">
+				<img src="img/picts/gallery-pict-3.jpg" width="100" height="150" alt="Пример № 3">
+			</a>
+			<figure class="modal" id="gallery-3">
+				<img class="modal__content" src="img/gallery-3.jpg" width="1280" height="1920" alt="Пример № 3 крупным планом">
+				<a class="modal__close" href="#gallery-pict-3">
+					<span class="visually-hidden">Назад в галлерею</span>
+				</a>
+			</figure>
+			<a class="gallery__pict pict" id="gallery-pict-4" href="#gallery-4">
+				<img src="img/picts/gallery-pict-4.jpg" width="225" height="150" alt="Пример № 4">
+			</a>
+			<figure class="modal" id="gallery-4">
+				<img class="modal__content" src="img/gallery-4.jpg" width="1920" height="1280" alt="Пример № 4 крупным планом">
+				<a class="modal__close" href="#gallery-pict-4">
+					<span class="visually-hidden">Назад в галлерею</span>
+				</a>
+			</figure>
+			<a class="gallery__pict pict" id="gallery-pict-5" href="#gallery-5">
+				<img src="img/picts/gallery-pict-5.jpg" width="100" height="150" alt="Пример № 5">
+			</a>
+			<figure class="modal" id="gallery-5">
+				<img class="modal__content" src="img/gallery-5.jpg" width="1280" height="1920" alt="Пример № 5 крупным планом">
+				<a class="modal__close" href="#gallery-pict-5">
+					<span class="visually-hidden">Назад в галлерею</span>
+				</a>
+			</figure>
+		</section>
+		<section class="description half">
+			<h2 class="visually-hidden">Описание продукта</h2>
+			<p class="description__lead lead">Лучший подарок маме на рождение малыша!</p>
+			<p class="description__txt">Стильный аксессуар в форме легкого универсального шарфа, который быстро превращается в накидку, скрывающую от посторонних глаз таинство кормления.</p>
+			<p class="description__txt">В отпуске, в самолете, на прогулке, в гостях и в ресторане полезное грудное молочко доступно малышу в любой момент. А мама при этом чувствует себя комфортно и защищенной.</p>
+			<p class="description__txt">Многофункциональность милкснуда будет полезна во многих ситуациях и порадует не один раз в любое время года!</p>
+			<p class="description__lead lead">Специальная цена — <del>1300</del> 1000 рублей</p>
+		</section>
+	</div>
+	<section class="offers container">
+		<h2 class="visually-hidden">Наши предложения</h2>
+		<p class="offers__lead lead lead--main">Летняя коллекция лучших помощников мам</p>
+		<p class="offers__lead offers__lead--accessory lead">Выбери свой неповторимый милкснуд!</p>
+		<article class="offers__item" id="offer-place-1">
+			<h3 class="offers__name lead">Милкснуд «Теддики»</h3>
+			<a class="offers__pict pict" href="#offer-1">
+				<img src="img/picts/offer-pict-1.jpg" width="350" height="309" alt="Товар № 1">
+			</a>
+			<div class="offers__sale offers__sale--label">sale</div>
+			<div class="offers__sale offers__sale--price">1000 ₽</div>
+			<a class="btn" href="#order-1">Сделать заказ!</a>
+		</article>
+		<figure class="modal" id="offer-1">
+			<img class="modal__content" src="img/offer-1.jpg" width="1920" height="1696" alt="Товар № 1 крупным планом">
+			<a class="modal__close" href="#offer-place-1"><span class="visually-hidden">Закрыть</span></a>
+		</figure>
+		<div class="modal" id="order-1">
+			<form class="modal__content modal__content--info" action="https://echo.htmlacademy.ru" method="post">
+				<h4 class="offers__form-heading lead">Заказать милкснуд «Теддики»</h4>
+				<input class="field field--order" type="text" name="name" required placeholder="Имя *">
+				<input class="field field--order" type="tel" name="tel" placeholder="Телефон (+X-XXX-XXX-XX-XX) *"
+					pattern="^\+{1}[0-9]{1,2}-{1}[0-9]{3}-{0,1}[0-9]{3}-{1}[0-9]{2}-{1}[0-9]{2}$" required>
+				<input type="hidden" name="snood" value="Теддики">
+				<button class="btn" type="submit">Отправить заявку!</button>
+			</form>
+			<a class="modal__close" href="#offer-place-1"><span class="visually-hidden">Закрыть</span></a>
+		</div>
+		<article class="offers__item" id="offer-place-2">
+			<h3 class="offers__name lead">Милкснуд «Мятные мишки»</h3>
+			<a class="offers__pict pict" href="#offer-2">
+				<img src="img/picts/offer-pict-2.jpg" width="350" height="309" alt="Товар № 2">
+			</a>
+			<div class="offers__sale offers__sale--label">sale</div>
+			<div class="offers__sale offers__sale--price">1000 ₽</div>
+			<a class="btn" href="#order-2">Сделать заказ!</a>
+		</article>
+		<figure class="modal" id="offer-2">
+			<img class="modal__content" src="img/offer-2.jpg" width="1920" height="1696" alt="Товар № 2 крупным планом">
+			<a class="modal__close" href="#offer-place-2"><span class="visually-hidden">Закрыть</span></a>
+		</figure>
+		<div class="modal" id="order-2">
+			<form class="modal__content modal__content--info" action="https://echo.htmlacademy.ru" method="post">
+				<h4 class="offers__form-heading lead">Заказать милкснуд «Мятные мишки»</h4>
+				<input class="field field--order" type="text" name="name" required placeholder="Имя *">
+				<input class="field field--order" type="tel" name="tel" placeholder="Телефон (+X-XXX-XXX-XX-XX) *"
+					pattern="^\+{1}[0-9]{1,2}-{1}[0-9]{3}-{0,1}[0-9]{3}-{1}[0-9]{2}-{1}[0-9]{2}$" required>
+				<input type="hidden" name="snood" value="Мятные мишки">
+				<button class="btn" type="submit">Отправить заявку!</button>
+			</form>
+			<a class="modal__close" href="#offer-place-2"><span class="visually-hidden">Закрыть</span></a>
+		</div>
+		<article class="offers__item" id="offer-place-3">
+			<h3 class="offers__name lead">Милкснуд «Меланж»</h3>
+			<a class="offers__pict pict" href="#offer-3">
+				<img src="img/picts/offer-pict-3.jpg" width="350" height="309" alt="Товар № 3">
+			</a>
+			<div class="offers__sale offers__sale--label">sale</div>
+			<div class="offers__sale offers__sale--price">1000 ₽</div>
+			<a class="btn" href="#order-3">Сделать заказ!</a>
+		</article>
+		<figure class="modal" id="offer-3">
+			<img class="modal__content" src="img/offer-3.jpg" width="1920" height="1696" alt="Товар № 3 крупным планом">
+			<a class="modal__close" href="#offer-place-3"><span class="visually-hidden">Закрыть</span></a>
+		</figure>
+		<div class="modal" id="order-3">
+			<form class="modal__content modal__content--info" action="https://echo.htmlacademy.ru" method="post">
+				<h4 class="offers__form-heading lead">Заказать милкснуд «Меланж»</h4>
+				<input class="field field--order" type="text" name="name" required placeholder="Имя *"><input class="fiel
+				d field--order" type="tel" name="tel" placeholder="Телефон (+X-XXX-XXX-XX-XX) *"
+					pattern="^\+{1}[0-9]{1,2}-{1}[0-9]{3}-{0,1}[0-9]{3}-{1}[0-9]{2}-{1}[0-9]{2}$" required>
+				<input type="hidden" name="snood" value="Меланж">
+				<button class="btn" type="submit">Отправить заявку!</button>
+			</form>
+			<a class="modal__close" href="#offer-place-3"><span class="visually-hidden">Закрыть</span></a>
+		</div>
+		<article class="offers__item" id="offer-place-4">
+			<h3 class="offers__name lead">Милкснуд «Белые пушистики»</h3>
+			<a class="offers__pict pict" href="#offer-4">
+				<img src="img/picts/offer-pict-4.jpg" width="350" height="309" alt="Товар № 4">
+			</a>
+			<div class="offers__sale offers__sale--label">sale</div>
+			<div class="offers__sale offers__sale--price">1000 ₽</div>
+			<a class="btn" href="#order-4">Сделать заказ!</a>
+		</article>
+		<figure class="modal" id="offer-4">
+			<img class="modal__content" src="img/offer-4.jpg" width="1920" height="1696" alt="Товар № 4 крупным планом">
+			<a class="modal__close" href="#offer-place-4"><span class="visually-hidden">Закрыть</span></a>
+		</figure>
+		<div class="modal" id="order-4">
+			<form class="modal__content modal__content--info" action="https://echo.htmlacademy.ru" method="post">
+				<h4 class="offers__form-heading lead">Заказать милкснуд «Белые пушистики»</h4>
+				<input class="field field--order" type="text" name="name" required placeholder="Имя *">
+				<input class="field field--order" type="tel" name="tel" placeholder="Телефон (+X-XXX-XXX-XX-XX) *"
+					pattern="^\+{1}[0-9]{1,2}-{1}[0-9]{3}-{0,1}[0-9]{3}-{1}[0-9]{2}-{1}[0-9]{2}$" required>
+				<input type="hidden" name="snood" value="Белые пушистики">
+				<button class="btn" type="submit">Отправить заявку!</button>
+			</form><a
+			class="modal__close" href="#offer-place-4"><span class="visually-hidden">Закрыть</span></a>
+		</div>
+		<article class="offers__item" id="offer-place-5">
+			<h3 class="offers__name lead">Милкснуд «Зайка-звездочет»</h3>
+			<a class="offers__pict pict" href="#offer-5">
+				<img src="img/picts/offer-pict-5.jpg" width="350" height="309" alt="Товар № 5">
+			</a>
+			<div class="offers__sale offers__sale--label">sale</div>
+			<div class="offers__sale offers__sale--price">1000 ₽</div>
+			<a class="btn" href="#order-5">Сделать заказ!</a>
+		</article>
+		<figure class="modal" id="offer-5">
+			<img class="modal__content" src="img/offer-5.jpg" width="1920" height="1696" alt="Товар № 5 крупным планом">
+			<a class="modal__close" href="#offer-place-5"><span class="visually-hidden">Закрыть</span></a>
+		</figure>
+		<div class="modal" id="order-5">
+			<form class="modal__content modal__content--info" action="https://echo.htmlacademy.ru" method="post">
+				<h4 class="offers__form-heading lead">Заказать милкснуд «Зайка-звездочет»</h4>
+				<input class="field field--order" type="text" name="name" required placeholder="Имя *">
+				<input class="field field--order" type="tel" name="tel" placeholder="Телефон (+X-XXX-XXX-XX-XX) *"
+					pattern="^\+{1}[0-9]{1,2}-{1}[0-9]{3}-{0,1}[0-9]{3}-{1}[0-9]{2}-{1}[0-9]{2}$" required>
+				<input type="hidden" name="snood" value="Зайка-звездочет">
+				<button class="btn" type="submit">Отправить заявку!</button>
+			</form>
+			<a class="modal__close" href="#offer-place-5"><span class="visually-hidden">Закрыть</span></a>
+		</div>
+		<article class="offers__item" id="offer-place-6">
+			<h3 class="offers__name lead">Милкснуд «Котятки»</h3>
+			<a class="offers__pict pict" href="#offer-6">
+				<img src="img/picts/offer-pict-6.jpg" width="350" height="309" alt="Товар № 6">
+			</a>
+			<div class="offers__sale offers__sale--label">sale</div>
+			<div class="offers__sale offers__sale--price">1000 ₽</div>
+			<a class="btn" href="#order-6">Сделать заказ!</a>
+		</article>
+		<figure class="modal" id="offer-6">
+			<img class="modal__content" src="img/offer-6.jpg" width="1920" height="1696" alt="Товар № 6 крупным планом">
+			<a class="modal__close" href="#offer-place-6"><span class="visually-hidden">Закрыть</span></a>
+		</figure>
+		<div class="modal" id="order-6">
+			<form class="modal__content modal__content--info" action="https://echo.htmlacademy.ru" method="post">
+				<h4 class="offers__form-heading lead">Заказать милкснуд «Котятки»</h4>
+				<input class="field field--order" type="text" name="name" required placeholder="Имя *">
+				<input class="field field--order" type="tel" name="tel" placeholder="Телефон (+X-XXX-XXX-XX-XX) *"
+					pattern="^\+{1}[0-9]{1,2}-{1}[0-9]{3}-{0,1}[0-9]{3}-{1}[0-9]{2}-{1}[0-9]{2}$" required>
+				<input type="hidden" name="snood" value="Котятки">
+				<button class="btn" type="submit">Отправить заявку!</button>
+			</form>
+			<a class="modal__close" href="#offer-place-6"><span class="visually-hidden">Закрыть</span></a>
+		</div>
+		<article class="offers__item" id="offer-place-7">
+			<h3 class="offers__name lead">Милкснуд «Радужные единороги»</h3>
+			<a class="offers__pict pict" href="#offer-7">
+				<img src="img/picts/offer-pict-7.jpg" width="350" height="309" alt="Товар № 7"></a>
+			<div class="offers__sale offers__sale--label">sale</div>
+			<div class="offers__sale offers__sale--price">1000 ₽</div>
+			<a class="btn" href="#order-7">Сделать заказ!</a>
+		</article>
+		<figure class="modal" id="offer-7">
+			<img class="modal__content" src="img/offer-7.jpg" width="1920" height="1696" alt="Товар № 7 крупным планом">
+			<a class="modal__close" href="#offer-place-7"><span class="visually-hidden">Закрыть</span></a>
+		</figure>
+		<div class="modal" id="order-7">
+			<form class="modal__content modal__content--info" action="https://echo.htmlacademy.ru" method="post">
+				<h4 class="offers__form-heading lead">Заказать милкснуд «Радужные единороги»</h4>
+				<input class="field field--order" type="text" name="name" required placeholder="Имя *">
+				<input class="field field--order" type="tel" name="tel" placeholder="Телефон (+X-XXX-XXX-XX-XX) *"
+					pattern="^\+{1}[0-9]{1,2}-{1}[0-9]{3}-{0,1}[0-9]{3}-{1}[0-9]{2}-{1}[0-9]{2}$" required>
+				<input type="hidden" name="snood" value="Радужные единороги">
+				<button class="btn" type="submit">Отправить заявку!</button>
+			</form>
+			<a class="modal__close" href="#offer-place-7"><span class="visually-hidden">Закрыть</span></a>
+		</div>
+	</section>
+	<div class="service container">
+		<section class="service__block service__block--delivery half">
+			<h2 class="service__heading service__heading--1 lead">Доставка</h2>
+			<ul class="service__list">
+				<li>Самовывоз (г. Красноярск, ул. 9 мая / ул. Крайняя) — бесплатно.</li>
+				<li>Курьерская доставка по г. Красноярску — 100–200 руб.</li>
+				<li>Доставка первым классом по России — 250 руб.</li>
+				<li>Международные отправления — стоимость рассчитывается индивидуально.</li>
+			</ul>
+		</section>
+		<section class="service__block service__block--pay half">
+			<h2 class="service__heading service__heading--2 lead">Оплата</h2>
+			<ul class="service__list">
+				<li>Курьеру при получении.</li>
+				<li>Предоплата на карту Сбербанка.</li>
+				<li>Предоплата на Яндекс.Деньги.</li>
+				<li>Международные переводы («Вестерн Юнион», «Колибри», другие — по запросу).</li>
+			</ul>
+		</section>
+	</div>
+	<datalist id="milksnoods">
+		<option value="Теддики"></option>
+		<option value="Мятные мишки"></option>
+		<option value="Меланж"></option>
+		<option value="Белые пушистики"></option>
+		<option value="Зайка-звездочет"></option>
+		<option value="Котятки"></option>
+		<option value="Радужные единороги"></option>
+	</datalist>
+{% endblock %}

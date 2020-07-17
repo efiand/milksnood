@@ -1,0 +1,76 @@
+.btn {
+	display: table;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 6px 10px 6px 35px;
+	font-size: 14px;
+	font-family: @font-service;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #2d6aa1;
+	background-image: url("../img/icons/heart.svg");
+	background-repeat: no-repeat;
+	background-position: 10px 6px;
+	border: 1px solid #245581;
+	border-bottom-width: 3px;
+	border-radius: 5px;
+	outline: none;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+	cursor: pointer;
+
+	&:hover:not([disabled]),
+	&:focus {
+		background-color: #295f91;
+		border-color: #1d4467;
+	}
+
+	&:active {
+		padding: 8px 10px 4px 35px;
+		background-position: 10px 8px;
+		box-shadow: inset -5px 5px 12px rgba(0, 0, 0, 0.25);
+	}
+
+	&--header {
+		margin: 20px auto 5px;
+		background-color: #e02653;
+		border-color: #b71a40;
+
+		&:hover:not([disabled]),
+		&:focus {
+			background-color: #ce1d48;
+			border-color: #931533;
+		}
+	}
+
+	&--feedback {
+		background-image: url("../img/icons/bell.svg");
+	}
+
+	&--instagram {
+		width: 34px;
+		height: 34px;
+		margin: 0 3px;
+		padding: 0;
+		background-image: url("../img/icons/instagram.svg");
+		background-position: center 7px;
+
+		&:active {
+			padding: 0;
+			background-position: center 9px;
+		}
+	}
+
+	&--vk {
+		width: 34px;
+		height: 34px;
+		margin: 0 3px;
+		padding: 0;
+		background-image: url("../img/icons/vk.svg");
+		background-position: center 10px;
+
+		&:active {
+			padding: 0;
+			background-position: center 12px;
+		}
+	}
+}

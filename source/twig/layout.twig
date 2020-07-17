@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru" prefix="og: http://ogp.me/ns#">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Милкснуды «Мама может!»</title>
+	<link rel="stylesheet" href="css/style.min.css">
+	<meta name="HandheldFriendly" content="True">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<link rel="canonical" href="/">
+	<meta name="format-detection" content="telephone=no">
+	{% block meta %}{% endblock %}
+</head>
+<body>
+	<header class="page-header">
+		<div class="logo">
+			<img class="logo__img" src="img/logo.png" width="241" height="241" alt="Милкснуды «Мама может!»">
+		</div>
+		<div class="page-header__lead">
+			<h1 class="page-header__heading">Милкснуды <b>«Мама может!»</b></h1>
+			<p class="page-header__descr">MUST HAVE каждой мамы<br>для кормления малыша в общественных местах и не только</p>
+		</div>
+		<form class="page-header__form" action="https://echo.htmlacademy.ru" method="post">
+			<label class="required" for="name">Имя</label>
+			<input class="field field--header" id="name" type="text" name="name" required>
+			<label class="required" for="tel">Телефон (+X-XXX-XXX-XX-XX)</label>
+			<input class="field field--header" id="tel" type="tel" name="tel" pattern="(\+?\d[- .]*){7,13}" required>
+			<label class="required" for="milksnood">Мне понравился милкснуд</label>
+			<input class="field field--header" id="milksnood" type="text" name="snood" list="milksnoods" required autocomplete="off">
+			<button class="btn btn--header" type="submit">Отправить заявку!</button>
+		</form>
+	</header>
+	<main>
+		{% block main %}{% endblock %}
+	</main>
+	<footer class="page-footer" itemscope itemtype="http://schema.org/Organization">
+		<div class="page-footer__container">
+			<section class="page-footer__logo page-footer__item">
+				<h2 class="visually-hidden" itemprop="name">Милкснуды «Мама может!»</h2>
+				<img src="img/logo.png" width="241" height="241" alt="Логотип «Милкснуды „Мама может“»">
+				<p class="lead">Мама может! Всё!</p>
+			</section>
+			<section class="page-footer__feedback page-footer__item" id="offer-place-0">
+				<a class="btn btn--feedback" href="#feedback">Заказать обратный звонок</a>
+				<div class="modal" id="feedback">
+					<form class="modal__content modal__content--info" action="https://echo.htmlacademy.ru" method="post">
+						<h4 class="offers__form-heading lead">Заказать обратный звонок</h4>
+						<input class="field field--order" type="text" name="name" required placeholder="Имя *">
+						<input class="field field--order" type="tel" name="tel" placeholder="Телефон (+X-XXX-XXX-XX-XX) *"
+							pattern="^\+{1}[0-9]{1,2}-{1}[0-9]{3}-{0,1}[0-9]{3}-{1}[0-9]{2}-{1}[0-9]{2}$" required>
+						<input type="hidden" name="snood" value="Обратный звонок">
+						<button class="btn" type="submit">Отправить заявку!</button>
+					</form>
+					<a class="modal__close" href="#milksnoods"><span class="visually-hidden">Закрыть</span></a>
+				</div>
+			</section>
+			<section class="page-footer__contacts page-footer__item">
+				<h2 class="visually-hidden">Контакты</h2>
+				<div class="visually-hidden" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+					<span itemprop="streetAddress">ул. 9 мая</span>
+					<span itemprop="postalCode">660127</span>
+					<span itemprop="addressLocality">Красноярск</span>
+				</div>
+				<div class="visually-hidden" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+					<span itemprop="streetAddress">ул. Крайняя</span>
+					<span itemprop="postalCode">660037</span>
+					<span itemprop="addressLocality">Красноярск</span>
+				</div>
+				<p class="page-footer__tel lead" itemprop="telephone">8 (950) 992-01-10</p>
+				<p class="page-footer__tel lead" itemprop="telephone">8 (913) 507-50-48</p>
+				<div class="page-footer__socials">
+					<a class="btn btn--instagram" href="#nowhere"><span class="visually-hidden">Мы в Инстаграм</span></a>
+					<a class="btn btn--vk" href="#nowhere"><span class="visually-hidden">Мы в Контакте</span></a>
+				</div>
+			</section>
+			<section class="page-footer__item share">
+				<h2 class="visually-hidden">Поделиться</h2>
+				<div class="share__item" data-social="facebook">
+					<a class="share__btn share__btn--fb"></a>
+					<output class="share__counter" data-counter="facebook"></output>
+				</div>
+				<div class="share__item" data-social="twitter">
+					<a class="share__btn share__btn--tw"></a>
+					<output class="share__counter" data-counter="twitter"></output>
+				</div>
+				<div class="share__item" data-social="vkontakte">
+					<a class="share__btn share__btn--vk"></a>
+					<output class="share__counter" data-counter="vkontakte"></output>
+				</div>
+				<div class="share__item" data-social="odnoklassniki">
+					<a class="share__btn share__btn--ok"></a>
+					<output class="share__counter" data-counter="odnoklassniki"></output>
+				</div>
+			</section>
+			<div class="page-footer__item">
+				<a class="page-footer__politic" href="#politic">Политика конфиденциальности</a>
+			</div>
+			<section class="politic modal" id="politic">
+				<div class="modal__content modal__content--info politic__content">
+					<h2 class="politic__heading lead">Политика Конфиденциальности</h2>
+					<p>Владелец сайта милкснуд.рф (далее — «Милкснуды „Мама может!“»), или Администрация, обязуется сохранять Вашу конфиденциальность в сети Интернет. Настоящая Политика Конфиденциальности рассказывает о том, как собираются, обрабатываются и хранятся Ваши личные данные. Администрация уделяет большое внимание защите личной информации пользователей. Пользуясь сайтом «Милкснуды „Мама может!“», пользователь тем самым дает согласие на применение правил сбора и использования данных, изложенных в настоящем документе.</p>
+					<p>Если Вы не согласны с условиями нашей Политики Конфиденциальности сайта «Милкснуды „Мама может!“», не используйте данный сайт!</p>
+					<h3 class="politic__subheading">Собираемая информация</h3>
+					<p>Администрация сайта может собирать следующую информацию о пользователях сайта:</p>
+					<p>— Фамилия, имя, отчество.</p>
+					<p>— Номер телефона.</p>
+					<h3 class="politic__subheading">Использование информации</h3>
+					<p>Ниже описаны некоторые способы использования личной информации пользователя:</p>
+					<p>— Для внутреннего отчета.</p>
+					<p>— Для предоставления информации и услуг, которые запрашивает пользователь.</p>
+					<p>— Для формирования статистических данных.</p>
+					<h3 class="politic__subheading">Раскрытие информации</h3>
+					<p>Администрация не продает личные данные пользователя и не передает их третьим лицам без согласия на то пользователя.</p>
+					<h3 class="politic__subheading">Прочая информация</h3>
+					<p>Дети любых возрастов могут беспрепятственно пользоваться данным сайтом.</p>
+					<a class="btn politic__btn" href="#milksnoods">Принимаю</a>
+				</div>
+				<a class="modal__close" href="#milksnoods"><span class="visually-hidden">Закрыть</span></a>
+			</section>
+		</div>
+	</footer>
+	<script src="js/goodshare.min.js"></script>
+	<script src="js/script.min.js"></script>
+</body>
+</html>

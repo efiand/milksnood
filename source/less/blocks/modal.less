@@ -1,0 +1,50 @@
+.modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+	display: none;
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.87);
+
+	&:target,
+	&--post {
+		display: flex;
+	}
+}
+
+.modal__content {
+	width: auto;
+	max-width: 95%;
+	height: auto;
+	max-height: 82vh;
+	margin: auto;
+	border-radius: 10px;
+	animation: bounce 0.6s;
+
+	&--info {
+		padding: 40px;
+		overflow-y: auto;
+		background-color: #ffffff;
+	}
+}
+
+.modal__close {
+	position: absolute;
+	top: 3vh;
+	right: 3vh;
+	z-index: 101;
+	width: 3vh;
+	height: 3vh;
+	background-image: url("../img/icons/close.svg");
+	background-size: 3vh 3vh;
+	outline: none;
+	opacity: 0.5;
+
+	&:hover,
+	&:focus {
+		opacity: 1;
+	}
+}

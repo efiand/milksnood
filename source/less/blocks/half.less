@@ -1,0 +1,17 @@
+.half {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 30px;
+
+	@media (max-width: 1450px) {
+		max-width: 480px;
+	}
+
+	@media (max-width: 1100px) {
+		max-width: 100%;
+
+		&:last-child {
+			margin-top: 60px;
+		}
+	}
+}
